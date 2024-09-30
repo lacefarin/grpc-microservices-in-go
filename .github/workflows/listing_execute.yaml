@@ -3,6 +3,7 @@ name: "Execute Listing"
 env:
   GITHUB_USERNAME: ${{ github.actor }}
   GITHUB_EMAIL: "${{ github.actor }}@users.noreply.github.com"
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true  # Opt out to use Node 12 temporarily
 
 on:
   workflow_dispatch:
